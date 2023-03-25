@@ -1,0 +1,24 @@
+{% extends './base.html'%}
+{% load static %}
+{% block hotelview %}
+
+<link rel="stylesheet" href="{% static 'css/hotelView.css' %}">
+<div class="try">{{s}}</div>
+<div class="grid">
+{% for i in a %}
+{% if s.id == i.Hotel.id %}
+
+<div class="card card__two">
+<figure class="card__img">
+  <img src="{{i.Image.url}}" width="340" height="280" />
+</figure>
+<div class="card__desc">
+{{i.des}}
+</div>
+</div>
+
+{% endif%}
+{% endfor %}
+</div>
+<script src="{% static 'js/h.js' %}"></script>
+{% endblock hotelview %}

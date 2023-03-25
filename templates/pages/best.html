@@ -1,0 +1,112 @@
+{% extends './base.html'%}
+{% load static %}
+{% block hotelview %}
+
+<link rel="stylesheet" href="{% static 'css/best.css' %}">
+
+<!--==============Places===================-->
+<section class="places">
+    <div class="places-text">
+        <br></br>
+        <small>meilleurs endroits à kenitra</small>
+        <h2>Endroits populaires</h2>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src="{% static "image/m.jpg" %}">
+                </div>
+            </div>
+
+            <div class="text">
+            
+                <h2>Mehdia beach</h2>
+                <p class="cost">A nice small beach, located in the west of Kenitra city. The beach is in the Mehdia town of Kenitra. This is an ideal place for beach lovers and surfers, especially in summer. </p>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src={% static "image/k.jpg" %}>
+                </div>
+            </div>
+
+            <div class="text">
+                
+                <h2>Kasbah of Mehdia</h2>
+                <p class="cost">Kasbah of Mehdia is a fortress located on the left bank of the river Sebou, overlooking the harbor in Mehdia. It has over 2000 years of history</p>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src={% static "image/t.jpg" %}>
+                </div>
+            </div>
+
+            <div class="text">
+               
+                <h2>Thamusida ruines</h2>
+                <p class="cost">Around 15km away from the Kenitra city center, Thamusida is an archaeological site. It was a river port in the Roman era in Morocco</p>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src={% static "image/3.jpg" %}>
+                </div>
+            </div>
+
+            <div class="text">
+               
+                <h2>Mosquée Mohamed VI</h2>
+                <p class="cost">his mosque has a beautiful modern architectural design with a minaret. You can visit this mosque and admire the contemporary Islamic architecture.</p>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src={% static "image/kb.jpg" %}>
+                </div>
+            </div>
+
+            <div class="text">
+               
+                <h2>Wander at Khabazat</h2>
+                <p class="cost">Khabazat is a neighborhood in the old Medina area. You can see the Moroccan traditional lifestyle in this neighborhood</p>
+               
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="zoom-img">
+                <div class="img-card">
+                    <img src={% static "image/km.jpg" %}>
+                </div>
+            </div>
+
+            <div class="text">
+               
+                <h2>Shop at Kénitra Mall</h2>
+                <p class="cost">You can find a variety of products ranging from apparel, cosmetics, shoes to electronics, toys. You can collect Moroccan traditional dresses for your daily needs </p>
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+</body>
+</html>
+<script src="{% static 'js/h.js' %}"></script>
+{% endblock hotelview %}

@@ -1,0 +1,21 @@
+{% extends './base.html' %}
+{% load static %}
+{% block r %}
+<link rel="stylesheet" href="{% static 'css/r.css' %}">
+<div class="container">
+    <main class="grid">
+       {% for i in a %}
+       <article>
+        <img src={{i.image.url}} alt="Sample photo">
+        <div class="text">
+          <h3>{{i.name}}</h3>
+          <p><div class="aa">address :  {{i.dec}}</div></p>
+          
+        </div>
+      </article>
+       {% endfor %}
+          
+    
+    </main>
+  </div>
+{% endblock r %}

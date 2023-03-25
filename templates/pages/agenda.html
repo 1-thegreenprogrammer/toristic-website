@@ -1,0 +1,20 @@
+{% extends './base.html' %}
+{% load static %}
+{% block agenda %}
+<link rel="stylesheet" href="{% static 'css/a.css' %}">
+<div id="content">
+  <h1>
+    kentira événements à venir</h1>
+
+  <ul class="timeline">
+  {% for i in a %}
+  <li class="event" data-date={{i.date.day}}/{{i.date.month}}/{{i.date.year}}>
+    <h3>{{i.name}}</h3>
+    <p>{{i.dec}}</p>
+  </li>   
+  {% endfor %}   
+   
+  </ul>
+</div>
+
+{% endblock agenda %}
