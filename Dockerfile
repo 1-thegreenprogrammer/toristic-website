@@ -11,6 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the current directory contents into the container at /app
 COPY . /app
+#it should work
 
 # Run the command to start the Django app
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
