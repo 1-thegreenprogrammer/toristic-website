@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% load static %}
 <link rel="stylesheet" href="{% static 'css/nav.css' %}">
 </head>
 <body>
@@ -17,7 +18,7 @@
     </button>
     <div class="dropdown-content">
       <a href="{% url 'hotel' %}">Hotels</a>
-      <a href="{% url 'restaurant' %}">Restaurant</a>
+      <a href="{% url 'resturnat' %}">Restaurant</a>
       <a href="{% url 'places' %}">Tourist Places</a>
     </div>
   </div>
