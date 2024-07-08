@@ -1,68 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-body {margin:0;font-family:Arial}
 .topnav {
   overflow: hidden;
-  background: 
-  linear-gradient(#f1ecec 0 0) 
-  bottom/100% calc(100% - var(--_i,1)*100%) no-repeat;
+  background: linear-gradient(#f1ecec 0 0) bottom/100% calc(100% - var(--_i,1)*100%) no-repeat;
   --_i: 0;
 }
-.logo{
-  width: 100px; 
-  height: 30px; 
-  display: block; 
-  text-indent: -9999px;
 
-}
-.intro{
-background-color: transparent;
-display: flex;
-text-align: center;
-justify-content: center;
-font-size:10px;
-padding-top: 10px;
-padding-bottom: 10px;
-
-
+.logo {
+  width: 100px;
+  height: auto;
+  display: block;
 }
 
 .intro {
-  --h: 1.2em;   /* the height */
-  
- 
+  background-color: transparent;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.intro {
+  --h: 1.2em;
   color: #0000;
-  text-shadow: 
-    0 var(--_i,var(--h)) #fff,
-    0 0 rgb(0 0 0 / var(--_i,1));
-  background: 
-    linear-gradient(#1095c1 0 0) 
-    bottom/100% calc(100% - var(--_i,1)*100%) no-repeat;
+  text-shadow: 0 var(--_i,var(--h)) #fff, 0 0 rgb(0 0 0 / var(--_i,1));
+  background: linear-gradient(#1095c1 0 0) bottom/100% calc(100% - var(--_i,1)*100%) no-repeat;
   overflow: hidden;
   transition: 0.3s;
   --_i: 0;
 }
-.intro:hover{
 
-  cursor: pointer; 
- color: antiquewhite;
-  ;
-
-
+.intro:hover {
+  cursor: pointer;
+  color: antiquewhite;
 }
-
-
 
 .topnav a {
   float: left;
   display: block;
-  color: #000000;
+  color: #000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 19px;
 }
-
-
 
 .topnav .icon {
   display: none;
@@ -74,7 +60,7 @@ padding-bottom: 10px;
 }
 
 .dropdown .dropbtn {
-  font-size: 20px;    
+  font-size: 20px;
   border: none;
   outline: none;
   color: rgb(69, 8, 8);
@@ -127,7 +113,9 @@ padding-bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -138,8 +126,12 @@ padding-bottom: 10px;
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
